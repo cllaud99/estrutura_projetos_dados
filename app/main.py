@@ -1,8 +1,16 @@
-from pipeline.extract import extract_files_xlsx as e_xlsx
+from pipeline.extract import extract_files_xlsx
+from pipeline.transform import concatenacao_lista_dataframe
+from pipeline.load import load_excel
 
 
-pasta = 'data/input'
+pasta_input = 'data/input'
+pasta_output = 'data/output'
+nome = 'consolidado'
 
-lista = e_xlsx(pasta)
 
-print(lista)
+
+if __name__ == "__main__":
+    data_frame_lista = extract_files_xlsx(pasta_input)
+    data_frame = concatenacao_lista_dataframe(data_frame_lista)
+    load_excel(data_frame, pasta_output, nome)
+
