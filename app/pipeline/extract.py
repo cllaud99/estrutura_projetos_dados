@@ -17,9 +17,8 @@ def extract_files_xlsx (path: str) -> List[pd.DataFrame]:
 
     return: lista de dataframes
     """
-    
+
     all_files = glob.glob(os.path.join(path_input, "*.xlsx"))
-    print(all_files)
     df_list = []
     for arquivo in all_files:
         df_list.append(pd.read_excel(arquivo))
