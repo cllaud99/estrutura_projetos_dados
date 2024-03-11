@@ -1,9 +1,11 @@
-import pandas as pd
 from typing import List
 
+import pandas as pd
 
 
-def concatenacao_lista_dataframe(data_frame_list: List[pd.DataFrame]) -> pd.DataFrame:
+def concatenacao_lista_dataframe(
+    data_frame_list: List[pd.DataFrame],
+) -> pd.DataFrame:
 
     """
     Função para transformar uma lista de dataframe
