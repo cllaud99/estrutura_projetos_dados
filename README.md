@@ -2,7 +2,7 @@
 
 ## Desenvolvido com base no workshop de Luciano Galvão
 
-Essa é a documentação do meu projeto: [Meu Projeto](https://github.io/cllaud99/estrutura_projetos_dados)
+Essa é a documentação do meu projeto: [Meu Projeto](https://cllaud99.github.io/estrutura_projetos_dados)
 
 
 ## Como rodar o projeto?
